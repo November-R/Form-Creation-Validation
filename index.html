@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <form>
+            <div>
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="usernameInput" minlength="3" maxlength="12" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="emailInput" required >
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" name="passwordInput" required maxlength="20" minlength="6" >
+                </div>
+                <div>
+                    <button type="submit" value="register">Register</button>
+                </div>
+                <div id="form-feedback"></div>
+            </div>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
