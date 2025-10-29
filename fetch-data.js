@@ -87,7 +87,7 @@ fetchUserData();
         //error catching and display after clearing any existing content    
         }catch(error) {
             dataContainer.innerHTML = '';
-            document.getElementById("api-data").textContent ="oopsie, Failed to load user Data";
+            dataContainer.textContent ="Failed to load user data.";
             console.error("Error Alert", error);
         }
     }
