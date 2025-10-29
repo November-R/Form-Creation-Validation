@@ -41,9 +41,6 @@ fetchUserData();
 */
 
 
-document.addEventListener("DOMContentLoaded", (event) => {
-    //confirms html has loaded successfully
-    console.log("DOM successfully loaded");
 
     //async function that fetches user's name using an api and displays them 
     const fetchUserData = async() => {
@@ -94,6 +91,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
             console.error("Error Alert", error);
         }
     }
+
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    //confirms html has loaded successfully
+    console.log("DOM successfully loaded");
 
     //call the function
     fetchUserData();
